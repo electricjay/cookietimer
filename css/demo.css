@@ -6,13 +6,6 @@ body {
     font-weight: normal;
     color: #888;
 }
-@media (max-width: 400px)
-{
-  #ribbon {
-    width: 100px !important; 
-    height: 100px !important;
-  }
-}
 .directions > p {
     font-size: 120%;
     line-height: 130%;

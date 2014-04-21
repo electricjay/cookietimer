@@ -1,10 +1,12 @@
 # CookieTimer.js
-Time cookies in your browser with cookies
+Time cookies in your browser using cookies
 
 ## About
 CookieTimer.js adds resilient timers across your whole website. It stores all of it's data in browser cookies so there is no need for a server component. CookieTimers are persistent across page reloads, arbitrary navigation, and even browser restarts.
 
 CookieTimer.js was designed to be added to recipe websites to aid users in timing their baking. 
+
+Test it out at http://electricjay.github.io/cookietimer/
 
 ## Usage
 Link the javascript and css resources into your web pages

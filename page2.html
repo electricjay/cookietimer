@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cookie Timer Page 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="James Cox">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+    <link href="css/cookietimer.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+  </head>
+
+  <body>
+<a href="https://github.com/electricjay/cookietimer"><img id='ribbon' style="z-index: -10; position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-green@2x.png" alt="Fork me on GitHub"></a>
+    <div class="container">
+
+      <div class="row">
+        <div class="span4">
+          <h1>CookieTimer.js
+          <h5 class="tagline">Time your cookies in your browser using cookies</h5>
+        </div>
+        <div class="span8">
+          <div id="timerContainer">
+            <div id='timersLabel'>
+              <a href="#timerContainer" onclick="javascript:CookieTimer.start('', 'Timer', 300);">
+                <img src="images/+timers.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span6">
+          <h2>History</h2>
+          <p>I created CookieTimer.js as part of a project evaluating an experimental recipe interface via user testing.  The experimental interface was universally panned by the users, but nearly every user who tried the timer spontaneously praised it.</p>
+          <p>I am now releasing the timer to the public so that your users may spontaneously praise your websites.</p>
+          <hr>
+          <h2>TODO</h2>
+          <ul>
+            <li>Test for compatibility with more browser versions</li>
+            <li>Add flash fallback for audio on older IE versions</li>
+            <li>Remove dependency on jquery.cookies.2.2.0.js</li>
+            <li>Separate html for timer into a separate file</li>
+          </ul>
+        </div>
+        <div class="span6" >
+          <h2>Compatibility</h2>
+          <p>Because recipe websites are often visited by users with older browsers CookieTimer.js has been coded  with an eye towards compatibility with legacy browsers.  The current version has been tested with the latest versions of Safari, Mobile Safari, Firefox, and Chrome.</p>
+          <p>With the exception of sound playback everything <em>should</em> be compatible back to IE 7.  You will need to add a flash audio fallback to support sound on IE 7 and 8.  Sound playback is not supported in mobile Safari due to it's requirement that audio playback must be initiated by a touch event.</p>
+          <hr>
+          <p>Time <a href="#timerContainer" onclick="javascript: CookieTimer.start('johnCage', 'John Cage', 273);">John Cage</a></p>
+          <p>Time <a href="#timerContainer" onclick="javascript: CookieTimer.start('oldFaithful', 'Old Faithful', 3600);">Old Faithful</a></p>
+          <p>Go back to the <a href="index.html">example page</a> and see if your timers come with you.</p>
+          </div>
+        </div>
+      <footer>
+        <hr>
+      <a href="http://github.com/electicjay/cookietimer" style="float: right">CookieTimer.js on GitHub</a>
+        <p>&copy; James Cox 2014</p>
+      </footer>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.cookies.2.2.0.js "></script>
+    <script src="js/cookietimer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+.timer {
+  font-size: 80%;
+}
+
+.cookieTimer {
+  margin-bottom: 10px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: auto;
+  margin: 10px;
+  display: inline-block;
+  background: white;
+}
+
+.cookieTimer .display-group {
+  display: inline-block;
+  border: 1px black #444;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 0px;
+  vertical-align: bottom;
+}
+
+.cookieTimer a {
+  font-family: monospace;
+  padding: none;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+  display: inline-block;
+  background: #EEE;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  vertical-align: 0px;
+  border: 1px solid #999;
+}
+.cookieTimer a:hover {
+  background: #CCC;
+}
+
+.cookieTimer a:active {
+  background: #777;
+}
+.cookieTimer .plus {
+  -webkit-border-radius: 15px 0 0 15px;
+  -moz-border-radius: 15px 0 0 15px;
+  border-radius: 15px 0 0 15px;
+}
+
+.cookieTimer .minus {
+  -webkit-border-radius: 0 15px 15px 0;
+  -moz-border-radius: 0 15px 15px 0;
+  border-radius: 0 15px 15px 0;
+}
+
+.cookieTimer .cancel {
+}
+
+.cookieTimer .name {
+  font-family: sans-serif;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cookieTimer .time {
+  font-family: monospace;
+  font-size: 22px;
+  padding: 0 10px;
+  opacity: 1;
+  color: black;
+  height: 30px;
+  background: #DDD;
+  display: inline-block;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  line-height: 30px;
+}
+
+.cookieTimer .btn-group {
+  margin-bottom: 10px;
+}
+
+.timerFlash {
+  background: red;
+}

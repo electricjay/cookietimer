@@ -1,0 +1,54 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.tagline {
+    font-weight: normal;
+    color: #888;
+}
+@media (max-width: 400px)
+{
+  #ribbon {
+    width: 100px !important; 
+    height: 100px !important;
+  }
+}
+.directions > p {
+    font-size: 120%;
+    line-height: 130%;
+}
+.directions >p > a > span {
+    font-size: 80%; 
+}
+.directions pre {
+    margin-left: 40px;
+}
+.ingredients > ul {
+    font-size: 125%;
+}
+.ingredients > ul
+{
+    font-size: 100%;
+}
+.ingredients > ul > li
+{
+    padding-bottom: 8px;
+}
+#timerContainer {
+    float: right;
+    border: 2px solid #ddd;
+    border-right: none;
+    border-radius: 10px;
+    min-height: 132px;
+}
+#timersLabel {
+    background: #ddd;
+    display: inline-block;
+    border-radius: 5px 0 0 5px;
+    float: left;
+    height: 132px;
+}
+#timersLabel img {
+    margin-top: 10px;
+    padding: 10px;
+}

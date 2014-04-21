@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cookie Timer Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="James Cox">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+    <link href="css/cookietimer.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+  </head>
+
+  <body>
+<a href="https://github.com/electricjay/cookietimer"><img id='ribbon' style="z-index: -10; position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-green@2x.png" alt="Fork me on GitHub"></a>
+    <div class="container">
+
+      <div class="row">
+        <div class="span4">
+          <h1>CookieTimer.js
+          <h5 class="tagline">Time your cookies in your browser using cookies</h5>
+        </div>
+        <div class="span8">
+          <div id="timerContainer">
+            <div id='timersLabel'>
+              <a href="#timerContainer" onclick="javascript:CookieTimer.start('', 'Timer', 300);">
+                <img src="images/+timers.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4 ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>js/cookietimer.js</li>
+            <li>jquery.js (any version will do)</li>
+            <li>js/jquery.cookies.2.2.0.js</li>
+            <li>css/cookietimer.css</li>
+            <li>sounds/alert.mp3</li>
+          </ul>
+        </div>
+        <div class="span8 directions" >
+          <h2>About</h2>
+          <p>CookieTimer.js adds resilient timers across your whole website.  It stores all of it's data in browser cookies so there is no need for a server component.  CookieTimers are persistent across page reloads, arbitrary navigation, and even browser restarts.</p>
+          <p>CookieTimer.js was designed to be added to recipe websites to aid users in timing their baking.</p>
+<a class="btn btn-primary" href="#timerContainer" onclick="javascript:CookieTimer.start('test', 'Test', 60);">Test Timer</a>
+          <hr>
+          <h2>Directions</h2>
+          <p>Copy all ingredients to your web server and allow files to rest for <a href="#timerContainer" onclick="javascript:CookieTimer.start('restFiles', 'Rest Files', 5);">5-10 seconds</a></p>
+          <p>Link the javascript and css resources into your web pages</p>
+          <pre>&lt;link href="css/cookietimer.css" rel="stylesheet"&gt;
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/jquery.cookies.2.2.0.js"&gt;&lt;/script&gt;
+&lt;script src="js/cookietimer.js"&gt;&lt;/script&gt;
+</pre>
+          <p>Add a container element to your web pages with <span style="font-family: monospace;">id='timerContainer'</span> to hold the timers.  For best results the timer container should be sturdy looking and give a visual hint that timers are persistent and available across all pages of your website.</p>
+          <p>Add buttons or links to your website that call the CookieTimer start function.</p>
+          <pre>CookieTimer.start('uniqueID', 'Label String', number_of_seconds);</pre>
+          <p>Pass in an empty string for the unique ID parameter and your link will create a new timer every time it is clicked.
+          <p>Bake HTML at 450&deg; for <a href="#timerContainer" onclick="javascript:CookieTimer.start('bakeHTML', 'Bake HTML', 25*60);">25 minutes</a>.</p>
+          <hr>
+          <p>Visit <a href="page2.html">another page</a> and see if your timers come with you.</p>
+        </div>
+
+      </div>
+
+    <hr>
+
+    <footer>
+      <a href="http://github.com/electicjay/cookietimer" style="float: right">CookieTimer.js on GitHub</a>
+      <p>&copy; James Cox 2014</p>
+    </footer>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.cookies.2.2.0.js "></script>
+    <script src="js/cookietimer.js"></script>
+  </body>
+</html>

@@ -192,7 +192,7 @@ $(function (){
     }
 
     $("body").append('<audio id="cookieTimerAudio" preload="auto">' +
-                     '  <source src="/sounds/alert.mp3" type="audio/mpeg">' +
+                     '  <source src="sounds/alert.mp3" type="audio/mpeg">' +
                      '</audio>');
     // This forces the onload function to be called again if we get back to this page via the back button.
     $(window).unload(function(){});
